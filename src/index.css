@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Khởi tạo màu sắc và animation cho Tailwind v4 */
+@theme {
+  --color-game-dark: #0f172a;
+  --color-game-board: #1e1b4b;
+  --color-game-primary: #8b5cf6;
+  --color-game-secondary: #ec4899;
+  --color-game-glow: #c084fc;
+
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse-glow: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pulseGlow {
+    0%,
+    100% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+    50% {
+      opacity: 0.7;
+      filter: brightness(1.2);
+    }
+  }
+}
+
+/* Khai báo class 3D tuỳ chỉnh */
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+body {
+  background-color: var(--color-game-dark);
+  color: white;
+  overflow-x: hidden;
+  user-select: none;
+}
