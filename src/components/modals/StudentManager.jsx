@@ -8,7 +8,7 @@ export function StudentManager({ studentsManager, onClose }) {
     const handleImport = () => {
         if (inputText.trim()) {
             importList(inputText);
-            setInputText('');
+
         }
     };
 
@@ -69,9 +69,9 @@ export function StudentManager({ studentsManager, onClose }) {
                                         <div className="flex items-center gap-3">
                                             {/* Badge trạng thái */}
                                             <span className={`text-[10px] uppercase font-bold px-2 py-1 rounded-full ${student.status === 'done' ? 'bg-emerald-500/20 text-emerald-400' :
-                                                    student.status === 'absent' ? 'bg-red-500/20 text-red-400' :
-                                                        student.status === 'skip' ? 'bg-gray-500/20 text-gray-400' :
-                                                            'bg-game-primary/20 text-game-glow'
+                                                student.status === 'absent' ? 'bg-red-500/20 text-red-400' :
+                                                    student.status === 'skip' ? 'bg-gray-500/20 text-gray-400' :
+                                                        'bg-game-primary/20 text-game-glow'
                                                 }`}>
                                                 {student.status === 'idle' ? 'Chưa gọi' :
                                                     student.status === 'done' ? 'Đã gọi' :
