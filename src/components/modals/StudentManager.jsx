@@ -24,7 +24,7 @@ export function StudentManager({ studentsManager, onClose }) {
                 </div>
 
                 <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
-                    {/* Cột trái: Nhập danh sách */}
+                    {/* Cột trái: Nhập danh sách  ----- */}
                     <div className="w-full md:w-1/3 p-6 border-r border-white/10 flex flex-col gap-4">
                         <div>
                             <label className="block text-sm font-bold text-gray-300 mb-2">Nhập nhanh (Mỗi dòng 1 tên)</label>
