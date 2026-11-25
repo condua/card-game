@@ -44,7 +44,7 @@ export function StudentManager({ studentsManager, onClose }) {
                         <p className="text-xs text-gray-500">*Lưu ý: Thao tác này sẽ ghi đè danh sách hiện tại.</p>
                     </div>
 
-                    {/* Cột phải: Danh sách hiện tại -------------------------- */}
+                    {/* Cột phải: Danh sách hiện tại ------------------------------- */}
                     <div className="w-full md:w-2/3 p-6 flex flex-col h-full overflow-hidden">
                         <div className="flex justify-between items-center mb-4">
                             <h3 className="font-bold text-lg text-white">
